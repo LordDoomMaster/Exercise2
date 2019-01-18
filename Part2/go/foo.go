@@ -13,6 +13,9 @@ const (
 	Exit
 )
 
+// <-chan input signal
+// chan<- output signal
+
 func number_server(add_number <-chan int, control <-chan int, number chan<- int) {
 	var i = 0
 
