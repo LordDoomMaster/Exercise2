@@ -7,6 +7,7 @@ int i = 0;
 void* incrementingThreadFunction(){
     for (int j = 0; j < 1000000; j++) {
 	// TODO: sync access to i
+	    
 	i++;
     }
     return NULL;
@@ -15,6 +16,7 @@ void* incrementingThreadFunction(){
 void* decrementingThreadFunction(){
     for (int j = 0; j < 1000000; j++) {
 	// TODO: sync access to i
+	    
 	i--;
     }
     return NULL;
