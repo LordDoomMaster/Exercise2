@@ -20,12 +20,16 @@
 ### What is the difference between race conditions and data races?
  > *Your answer here*
  - Data race
- When two or more operations that are not synchronized tries to access the same memory location.
+ When two or more operations that are not synchronized tries to access the same memory location and at least one is write.
  - Race conditions
  Flaws in the timing or ordering of events that can lead to erroneous programing bevahior. 
 
 ### List some advantages of using message passing over lock-based synchronization primitives.
-> *Your answer here*
+> No data races or deadlocks -> easier to avoid bugs.
+> Can pass data between threads and processes.
+> More scalable.
 
 ### List some advantages of using lock-based synchronization primitives over message passing.
-> *Your answer here*
+> Easier algorithms
+> Works in most languages
+> 
